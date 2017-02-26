@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MemoryChallenger</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_create">Create</string>
+    <string name="button_play">Play</string>
+    <string name="button_submit">Submit</string>
+    <string name="button_continue">Continue</string>
+
+    <string name="radio_short_answer">Short Answer</string>
+    <string name="radio_long_answer">Long Answer</string>
+    <string name="radio_multiple_choice">Multiple Choice</string>
+
+    <string name="label_create_msg">Label name (not case sensitive)</string>
+    <string name="question_name_msg">Question</string>
+    <string name="answer_msg">Answer (not case sensitive)</string>
+    <string name="multiple_choice_answer_msg">Answer (will not appear if left blank)</string>
+
+    <string name="label_multiple_msg">Label names (case insensitive, separate with ;)</string>
+    <string name="num_questions_msg">Max # questions (number value only)</string>
+
+
+    <!-- FILENAMES -->
+    <string name="label_file">labels.txt</string>
+    <string name="question_file">questions.txt</string>
+
+
+    <string name="separator">~;:</string>
+    <string name="title_activity_pre_game">PreGameActivity</string>
+
+</resources>

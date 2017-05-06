@@ -24,8 +24,12 @@ public class PreGameActivity extends AppCompatActivity {
         EditText labelsText = (EditText) findViewById(R.id.label_names_text);
         String[] labels = setLabels(labelsText.getText().toString());
         if (labels.length == 0) return;
-        int numQuestions = Integer.parseInt(((EditText) findViewById(R.id.num_questions_text)).getText().toString());
-        if (numQuestions <= 0) return;
+        Integer numQuestions = null;
+        try {
+            numQuestions = Integer.parseInt(((EditText) findViewById(R.id.num_questions_text)).getText().toString());
+        } catch (NumberFormatException e) {
+        }
+        if (numQuestions != null && numQuestions <= 0) return;
         intent.putExtra(PlayGameActivity.LABELS_KEY, labels);
         intent.putExtra(PlayGameActivity.NUM_QUESTIONS_KEY, numQuestions);
         startActivity(intent);

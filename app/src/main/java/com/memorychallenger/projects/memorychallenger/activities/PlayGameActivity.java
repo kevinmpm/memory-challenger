@@ -44,7 +44,7 @@ public class PlayGameActivity extends AppCompatActivity {
     }
 
     private void askQuestion() {
-        if (curQuestion >= questions.length) {
+        if (curQuestion >= questions.length || questions[curQuestion] == null) {
             //startActivity(new Intent(this, MainActivity.class));
             finish();
         } else {
